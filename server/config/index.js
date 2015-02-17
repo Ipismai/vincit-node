@@ -11,8 +11,7 @@ var configuration = {
     mongo: {
         dbpath: 'mongodb://localhost',
         dbname: 'vincitharkka',
-        dbport: 27017,
-        populateDatabase: false
+        dbport: 27017
     }
 };
 

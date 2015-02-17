@@ -4,7 +4,8 @@
   "description": "Vincit-Kotitehtävä: Henkilötietojen tallennus- ja muokkaussovellus",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha server/tests/apiTests.js",
+    "start": "node server/server.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,12 @@
   },
   "homepage": "https://github.com/Ipismai/vincit-node",
   "dependencies": {
+    "body-parser": "^1.12.0",
     "express": "^4.11.2",
     "mongoose": "^3.8.23"
+  },
+  "devDependencies": {
+    "mocha": "^2.1.0",
+    "supertest": "^0.15.0"
   }
 }
