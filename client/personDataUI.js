@@ -146,4 +146,7 @@ angular.module('personDataUI')
                 displayMessage('Error!', 'Person\'s data could not be modified.');
             });
         }
+        
+        // Loading the list of persons on load.
+        $scope.refreshPersonList();
 });
