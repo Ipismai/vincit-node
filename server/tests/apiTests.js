@@ -169,6 +169,11 @@ describe('API functionality with unexpected parameters', function() {
         .expect(400, done);
     });
 
+    it ('DELETE api/person USED FOR FURTHER TESTING -> Expect 200', function (done) {
+        api.delete('/person/' + postedPersonID)
+        .expect(200, done);
+    });
+
 });
 
 /*

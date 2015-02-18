@@ -2,7 +2,7 @@
   "name": "VincitHarkka",
   "version": "1.0.0",
   "description": "Vincit-Kotitehtävä: Henkilötietojen tallennus- ja muokkaussovellus",
-  "main": "index.js",
+  "main": "server/server.js",
   "scripts": {
     "test": "mocha server/tests/apiTests.js",
     "start": "node server/server.js"

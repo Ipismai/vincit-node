@@ -20,6 +20,8 @@ mongoose.connect(config.mongo.dbpath + ':' + config.mongo.dbport +
 var app = express();
 app.use(bodyParser.json());
 app.use('/api', api);
+// Serving the client files as static.
+app.use(express.static(__dirname + '/../client'));
 
 // Starting the server.
 var server = app.listen(config.serverPort, function () {
